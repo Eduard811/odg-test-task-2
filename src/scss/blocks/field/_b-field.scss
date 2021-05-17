@@ -1,0 +1,93 @@
+.b-field {
+  width: 100%;
+
+  &__label {
+    @include desktop-caption-14;
+    color: $main-black;
+    margin-bottom: 8px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  &__input {
+    @include desktop-body-14;
+    color: $main-black;
+    border-radius: 3px;
+    padding: 7px 10px;
+    border: 1px solid $input-idle;
+    caret-color: $gray;
+    transition: border 0.1s ease;
+    &:focus {
+      border: 1px solid $main-black;
+    }
+    &:disabled {
+      cursor: no-drop;
+      background-color: $white;
+      border: 1px solid $gray;
+      &::placeholder {
+        color: $gray;
+      }
+    }
+
+    &::placeholder {
+      color: $input-idle;
+    }
+
+    &_error {
+      border: 1px solid $red;
+    }
+  }
+
+  &__description {
+    @include desktop-body-10;
+    display: none;
+    &_error {
+      display: block;
+      color: $red;
+      margin-top: 4px;
+    }
+  }
+
+  &__button {
+    @include desktop-caption-14;
+    display: flex;
+    color: $red;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    transition: color 0.1s ease;
+    margin-top: 8px;
+
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      color: $red;
+    }
+  }
+
+  &__dialog {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    &__question {
+      @include desktop-caption-14;
+      color: $main-black;
+      margin-right: 32px;
+    }
+  }
+
+  &__block-two {
+    margin-top: 16px;
+  }
+
+  &__total {
+    @include desktop-caption-14;
+    color: $main-black;
+  }
+}

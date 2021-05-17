@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: url('../fonts/LabGrotesque/LabGrotesque-Regular.eot');
+  src: local('../fonts/LabGrotesque/Lab Grotesque Regular'),
+    local('../fonts/LabGrotesque/LabGrotesque-Regular'),
+    url('../fonts/LabGrotesque/LabGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/LabGrotesque/LabGrotesque-Regular.woff2') format('woff2'),
+    url('LabGrotesque-Regular.woff') format('woff'),
+    url('../fonts/LabGrotesque/LabGrotesque-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: url('../fonts/LabGrotesque/LabGrotesque-Medium.eot');
+  src: local('../fonts/LabGrotesque/Lab Grotesque Medium'), local('../fonts/LabGrotesque/LabGrotesque-Medium'),
+    url('../fonts/LabGrotesque/LabGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/LabGrotesque/LabGrotesque-Medium.woff2') format('woff2'),
+    url('LabGrotesque-Medium.woff') format('woff'),
+    url('../fonts/LabGrotesque/LabGrotesque-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

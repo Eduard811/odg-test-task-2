@@ -1,0 +1,55 @@
+        <footer class="l-footer"></footer>
+    </div>
+
+    <!--b-popup-->
+    <div class="b-popup">
+        <div class="b-popup__wrapper">
+            <h3 class="b-popup__title">Налоговый вычет</h3>
+            <p class="b-popup__description">Используйте налоговый вычет чтобы погасить ипотеку досрочно. Размер налогового вычета составляет не более 13% от своего официального годового дохода.</p>
+            <form id="tax-deduction-form" class="b-popup__form">
+                <div class="b-form">
+                    <div class="b-field">
+                        <div class="b-field__block">
+                            <input 
+                                type="number"
+                                placeholder="Введите данные"
+                                data-tax-deduction
+                                name="tax-deduction"
+                                id="b-field-tax-deduction"
+                                class="b-field__input"
+                            >
+                            <label for="b-field-tax-deduction" class="b-field__label">Ваша зарплата в месяц</label>
+                        </div>
+                        <span class="b-field__description">Поле обязательно для заполнения</span>
+                        <button class="b-field__button" type="button">Рассчитать</button>
+                        <div class="b-field__block-two">
+                            <h5 class="b-field__total">Итого можете внести в качестве досрочных:</h5>
+                            <div class="b-field__checkbox-block">
+                                <input 
+                                type="checkbox"
+                                name="total"
+                                id="total-checkbox"
+                                class="b-field__checkbox"
+                            >
+                            <label for="total-checkbox" class="b-field__checkbox-label">78 000 рублей <span>в 1-й год</span></label>
+                            </div>
+                        </div>
+                        <div class="b-field__dialog">
+                            <span class="b-field__dialog__question">Что уменьшаем?</span>
+                            <button class="b-tag b-tag_active" type="button">Платёж</button>
+                            <button class="b-tag" type="button">Срок</button>
+                        </div>
+                    </div>
+                    <div class="b-form__submit">
+                        <button class="b-button b-button_contained" type="submit">Добавить</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/assets/js/main.js?v0.46.0"></script>
+</body>
+
+</html>

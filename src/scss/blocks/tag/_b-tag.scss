@@ -1,0 +1,27 @@
+.b-tag {
+  @include desktop-body-14;
+  display: flex;
+  color: $main-black;
+  padding: 6px 12px;
+  background: $not-active;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  margin-right: 16px;
+  transition: background-color 0.1s ease;
+  &:last-child {
+    margin-right: unset;
+  }
+
+  &:hover {
+    background: $hover;
+  }
+
+  &_active {
+    background: $gradient-red;
+    color: $white;
+    &:hover {
+      background: $gradient-red;
+    }
+  }
+}

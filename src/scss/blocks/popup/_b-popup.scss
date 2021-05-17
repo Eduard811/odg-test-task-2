@@ -1,0 +1,47 @@
+.b-popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  z-index: 100;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 552px;
+  background-color: $white;
+  border-radius: 30px;
+  padding: 32px;
+
+  &__wrapper {
+    width: 488px;
+  }
+
+  &__title {
+    @include desktop-h3;
+    color: $main-black;
+    width: 235px;
+  }
+
+  &__description {
+    @include desktop-body-14;
+    color: $gray;
+    margin-top: 16px;
+  }
+
+  &__form {
+    margin-top: 24px;
+  }
+
+  &_active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1s ease;
+  }
+}
+
+.b-form {
+  &__submit {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
