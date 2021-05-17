@@ -1,0 +1,30 @@
+.b-field {
+  &__dialog {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &__question {
+      @include mobile-caption-14;
+      margin-right: unset;
+    }
+    &__btn-wrap {
+      margin-top: 24px;
+    }
+  }
+
+  &__input {
+    &:hover {
+      border: 1px solid $input-idle;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    margin-top: unset;
+    background-color: $white;
+  }
+}

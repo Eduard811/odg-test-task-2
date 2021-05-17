@@ -21,8 +21,11 @@
     border: 1px solid $input-idle;
     caret-color: $gray;
     transition: border 0.1s ease;
-    &:focus {
+    &:hover {
       border: 1px solid $main-black;
+    }
+    &:focus {
+      border: 1px solid $input-idle;
     }
     &:disabled {
       cursor: no-drop;
@@ -80,6 +83,9 @@
       color: $main-black;
       margin-right: 32px;
     }
+    &__btn-wrap {
+      display: flex;
+    }
   }
 
   &__block-two {
@@ -99,12 +105,31 @@
   }
 
   &__checkbox {
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-image: url(/assets/i/svg/Checkbox_normal.svg);
     margin: unset;
     margin-right: 11px;
     cursor: pointer;
+    transition: all 0.1s ease;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border: none;
+
+    &:hover {
+      background-image: url(/assets/i/svg/Checkbox_hover.svg);
+      transition: all 0.1s ease;
+      background-repeat: no-repeat;
+    }
+    &:checked {
+      background-image: url(/assets/i/svg/Checkbox_click.svg);
+      background-repeat: no-repeat;
+    }
+    &:disabled {
+      background-image: url(/assets/i/svg/Checkbox_disabled.svg);
+      background-repeat: no-repeat;
+      cursor: auto;
+    }
   }
 
   &__checkbox-label {
@@ -114,5 +139,11 @@
     & span {
       color: $gray;
     }
+  }
+
+  &__submit {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
   }
 }

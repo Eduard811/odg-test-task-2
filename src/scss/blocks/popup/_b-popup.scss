@@ -22,12 +22,30 @@
     padding: 32px;
     background-color: $white;
     border-radius: 30px;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    & svg {
+      min-width: 40px;
+      min-height: 40px;
+    }
   }
 
   &__title {
     @include desktop-h3;
     color: $main-black;
-    width: 235px;
   }
 
   &__description {
@@ -45,12 +63,5 @@
     visibility: visible;
     opacity: 1;
     transition: opacity 0.1s ease;
-  }
-}
-
-.b-form {
-  &__submit {
-    width: 100%;
-    margin-top: 40px;
   }
 }

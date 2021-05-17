@@ -33,6 +33,34 @@ $primary-font: 'Lab Grotesque', sans-serif;
   line-height: 12px;
 }
 
+@mixin mobile-h3 {
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin mobile-body-12 {
+  font-family: $primary-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@mixin mobile-caption-14 {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin mobile-caption-12 {
+  font-family: $primary-font;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
 //color-styles
 $gray: #808080;
 $main-black: #000000;
@@ -45,11 +73,3 @@ $orange: #f53a31;
 $not-active: #eef0f2;
 $hover: #dfe3e6;
 $gradient-red: linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
-
-//button
-@mixin big-button-default {
-  @include desktop-caption-16;
-  padding: 16px 32px;
-  border-radius: 6px;
-  cursor: pointer;
-}

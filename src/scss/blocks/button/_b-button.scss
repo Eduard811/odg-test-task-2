@@ -1,5 +1,8 @@
 .b-button {
-  @include big-button-default;
+  @include desktop-caption-16;
+  padding: 16px 32px;
+  border-radius: 6px;
+  cursor: pointer;
   color: $white;
   transition: all 0.1s ease-in;
 
