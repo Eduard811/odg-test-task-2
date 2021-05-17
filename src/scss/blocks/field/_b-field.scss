@@ -90,4 +90,29 @@
     @include desktop-caption-14;
     color: $main-black;
   }
+
+  &__checkbox-block {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid $input-idle;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/i/svg/Checkbox_normal.svg);
+    margin: unset;
+    margin-right: 11px;
+    cursor: pointer;
+  }
+
+  &__checkbox-label {
+    @include desktop-body-14;
+    color: $main-black;
+    cursor: pointer;
+    & span {
+      color: $gray;
+    }
+  }
 }

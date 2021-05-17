@@ -3,17 +3,25 @@
   opacity: 0;
   transition: opacity 0.1s ease;
   z-index: 100;
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 552px;
-  background-color: $white;
-  border-radius: 30px;
-  padding: 32px;
+  width: 100%;
+  position: fixed;
+  min-height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: auto;
+  padding: 120px 0;
 
   &__wrapper {
-    width: 488px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 0 auto;
+    width: 552px;
+    padding: 32px;
+    background-color: $white;
+    border-radius: 30px;
   }
 
   &__title {
@@ -33,6 +41,7 @@
   }
 
   &_active {
+    display: flex;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.1s ease;
