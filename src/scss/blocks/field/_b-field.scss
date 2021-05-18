@@ -3,6 +3,7 @@
 
   &__label {
     @include desktop-caption-14;
+    width: fit-content;
     color: $main-black;
     margin-bottom: 8px;
   }
@@ -111,7 +112,6 @@
     margin: unset;
     margin-right: 11px;
     cursor: pointer;
-    transition: all 0.1s ease;
     background-repeat: no-repeat;
     border-radius: 6px;
     border: none;
