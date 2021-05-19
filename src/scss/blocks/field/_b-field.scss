@@ -90,7 +90,11 @@
   }
 
   &__block-two {
+    display: none;
     margin-top: 16px;
+    &_active {
+      display: block;
+    }
   }
 
   &__total {
